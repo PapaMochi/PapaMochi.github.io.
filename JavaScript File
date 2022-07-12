@@ -1,0 +1,33 @@
+var displayName = document.getElementById("secret");
+var button = document.getElementById("myButton");
+
+if(button) {
+  button.addEventListener("click", displaySecret);
+}
+
+function displaySecret() {
+  var text = document.getElementById("myText").value;
+  displayName.innerHTML = text + ", did you know in 2004, when I was born, a pound of beef was $2.68"
+}
+
+
+var factList = [
+  "Ice cream is good",/*0*/
+  "Baby animals are adorable",/*1*/
+  "Chocolate chip pancakes are just cookies",/*2*/
+  "Rainbows are colorful",/*3*/
+];
+
+var fact = document.getElementById("fact");
+var myButton = document.getElementById("myButton");
+var count = 0;
+
+myButton.addEventListener("click", displayFact);
+
+function displayFact(){
+  fact.innerHTML = factList[count];
+  count++;
+  if (count == factList.length) {
+    count = 0;
+  }
+}
