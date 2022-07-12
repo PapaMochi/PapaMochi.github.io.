@@ -1,0 +1,113 @@
+/* STYLE SECTIONING TAGS */
+* { /* Reset the space of the webpage */
+   margin: 0px;
+   padding: 0px;
+}
+
+body {
+ background-color: peachpuff;
+ text-align: center;
+}
+
+main { 
+  padding-top: 25px;      
+  padding-bottom: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+ 
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+/* STYLE TEXT */
+
+h1 {
+  color: purple;
+  font-size: 80;
+}
+
+h2 {
+  color: purple;
+  font-size: 80;
+}
+
+
+p {
+  color: purple;
+  font-size: 40;
+  text-align: center;
+  font-size: large;
+}
+
+/* STYLE IMAGES */
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.flex-item {
+  flex-basis: 100%;
+  margin: 1%;
+}
+
+img {
+  width: 90%;
+  border-style: solid;
+  border-color: #bf735a;
+  border-width: 8px;
+  border-radius: 3px;
+}
+
+/* STYLE NAV BAR */
+
+ul {
+  list-style-type: none;
+  background-color: #610f00;
+  overflow: hidden;
+  padding: 1em;
+}
+
+li {
+  display: inline;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3em;
+  padding: 1em;
+}
+
+li a:hover {
+  background-color: #dbb700;
+}
+
+/* STYLE BUTTONS */
+
+/* ADD MORE! */
+
+/*CHANGE CSS BASED ON SCREEN SIZE*/
+/*Breakpoint 1*/
+
+@media screen and (max-width: 850px){
+  .flex-container{
+    flex-wrap: wrap;
+  }
+}
+
+.genFact {
+  background: #d0be90;
+  border-radius: 30px;
+  border-style: none;
+
+  padding: 50px;
+
+  margin-top: 30px;
+  margin-left: 35%;
+  margin-right: 35%;
+
+  text-align: center;
+  color: purple;
+}
